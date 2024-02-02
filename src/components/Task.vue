@@ -1,10 +1,10 @@
 <template>
   <div :class="[task.reminder ? 'reminder' : '', 'task']">
     <h3>
-      {{ task.text }}
+      {{ task.title }}
       <i @click="onDelete(task.id)" class="fas fa-times"></i>
     </h3>
-    <p>{{ task.day }}</p>
+    <p>{{ new Date().toDateString() }}</p>
   </div>
 </template>
 
